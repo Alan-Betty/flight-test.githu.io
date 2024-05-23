@@ -1,0 +1,88 @@
+* {
+    background: grey;
+    margin: 0;
+    padding: 0;
+}
+
+.sky {
+    height: 965px;
+    width: 1920px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.airplane {
+    margin-right: 300px;
+    margin-left: 200px;
+    margin-bottom: 300px;
+    margin-top: -150px;
+    filter: grayscale(100%);
+    max-width: 0px;
+    max-height: 0;
+}
+
+a {
+    display: none;
+
+}
+
+.clouds {
+    background-image: url(cloud1.png);
+    padding: 70px;
+    background-repeat: no-repeat;
+    display: inline;
+    padding-left: 120px;
+    animation: cloudanimation 4s 0.1s ease-in-out infinite;
+
+    transition: transform 0.5s;
+}
+
+.sky :nth-child(1) {
+    position: relative;
+    left: 200px;
+    top: 375px;
+}
+
+.sky :nth-child(2) {
+    position: relative;
+    left: 1300px;
+    top: 600px;
+}
+
+.sky :nth-child(3) {
+    position: relative;
+    left: 325px;
+    top: 775px;
+}
+
+.sky :nth-child(4) {
+    position: relative;
+    left: 750px;
+    top: 75px;
+}
+
+.text {
+    padding-left: 200px;
+    padding-bottom: -200px;
+    position: relative;
+    top: -375;
+}
+
+#cloud4{
+    padding-top: 30px;
+}
+
+
+@keyframes cloudanimation{
+    0%{
+        height: 150px;
+        width: 175px;
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+        height: 50px;
+        width: 75px;
+    }
+}
